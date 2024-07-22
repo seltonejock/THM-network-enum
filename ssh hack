@@ -1,0 +1,33 @@
+┌──(kali㉿kali)-[~]
+└─$ chmod 600 /home/kali/id_rsa
+                                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ ssh -i id_rsa cactus@10.10.74.102                 
+The authenticity of host '10.10.74.102 (10.10.74.102)' can't be established.
+ED25519 key fingerprint is SHA256:IiPAreH3/zvA2edHv44DY7aO0feb2/pHmNR7B1VK7+o.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.10.74.102' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-96-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Jul 22 09:41:55 UTC 2024
+
+  System load:  0.0                Processes:           93
+  Usage of /:   33.3% of 11.75GB   Users logged in:     0
+  Memory usage: 17%                IP address for eth0: 10.10.74.102
+  Swap usage:   0%
+
+
+22 packages can be updated.
+0 updates are security updates.
+
+
+Last login: Tue Apr 21 11:19:15 2020 from 192.168.1.110
+cactus@polosmb:~$ ls
+smb.txt
+cactus@polosmb:~$ cat smb.txt
+THM{smb_is_fun_eh?}
